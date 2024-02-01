@@ -281,7 +281,7 @@ public class FolderCredentialsProviderTest {
     }
 
     @Test
-    @Issue("SECURITY-3252")
+    @Issue("JENKINS-72611")
     public void cannotUpdateCredentialsId() throws Exception {
         UsernamePasswordCredentialsImpl cred1 = new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, "cred1", "Cred 1", "foo", "bar");
         UsernamePasswordCredentialsImpl cred2 = new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, "cred2", "Cred 2", "fee", "baz");
